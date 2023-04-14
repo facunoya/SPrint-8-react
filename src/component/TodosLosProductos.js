@@ -20,12 +20,11 @@ function TodosLosProductos() {
             {productos.length === 0 && <p>Cargando...</p>}
             {
                 productos.map((producto, i) => {
-                    console.log(producto.imgURL)
+
                     return (
                         <li key={i}>
                             <h3>{producto.Destinations.name}</h3>
-
-                            <img src={producto.imgURL} alt="avatar" width="150" />
+                            <img src={`http://localhost:3007/img/${producto.imgURL}`} width="150px" />
                         </li>
                     )
                 })

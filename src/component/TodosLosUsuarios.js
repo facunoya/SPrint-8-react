@@ -7,7 +7,6 @@ function TodosLosUsuarios() {
         fetch('http://localhost:3007/allusers')
             .then(response => response.json())
             .then(data => {
-                console.log(data)
                 setUsuarios(data)
             })
             .catch(error => console.log(error))
@@ -21,7 +20,7 @@ function TodosLosUsuarios() {
                     return (
                         <li key={i}>
                             <h3>{usuario.name}</h3>
-                            <img src={usuario.avatar} alt="avatar" width="150" />
+                            <img src={`http://localhost:3007/img/${usuario.avatar}`} width="150px" />
                         </li>
                     )
                 })
