@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react"
 
 
-function TodosLosProductos() {
+function CantidadDeProductos() {
     const [productos, setProductos] = useState([])
     useEffect(() => {
 
@@ -41,4 +41,4 @@ function TodosLosProductos() {
 }
 
 
-export default TodosLosProductos;
+export default CantidadDeProductos;

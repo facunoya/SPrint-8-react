@@ -5,14 +5,15 @@ import "../css/style.css"
 function App() {
   return (
     <>
-    <div className="productos">
+      {/* <div className="productos">
       <TodosLosProductos />
       
     </div>
     <div className ="usuarios">
       <TodosLosUsuarios/>
-    </div>
-    
+    </div> */}
+
+      <p>hola</p>
     </>
   );
 }
@@ -21,5 +22,5 @@ export default App;
 
 
 
-    
+
 
