@@ -1,13 +1,25 @@
 import TodosLosProductos from "./TodosLosProductos";
 import TodosLosUsuarios from "./TodosLosUsuarios";
+import "../css/style.css"
 
 function App() {
   return (
-    <div className="App">
+    <>
+    <div className="productos">
       <TodosLosProductos />
-      <TodosLosUsuarios />
+      
     </div>
+    <div className ="usuarios">
+      <TodosLosUsuarios/>
+    </div>
+    
+    </>
   );
 }
 
 export default App;
+
+
+
+    
+
