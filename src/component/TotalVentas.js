@@ -1,11 +1,11 @@
 import { useState, useEffect, useRef } from "react"
 
 
-function CantidadDeProductos() {
+function TotalVentas() {
     const [productos, setProductos] = useState([])
     useEffect(() => {
 
-        fetch('http://localhost:3007/mostrarproductos')
+        fetch('http://localhost:3007/soldproducts')
             .then(response => response.json())
             .then(data => {
 
@@ -17,7 +17,7 @@ function CantidadDeProductos() {
 
     return (
         <div>
-            <h1>Cantidad de productos</h1>
+            <h1>Cantidad de ventas</h1>
             {productos.length}
         </div>
 
@@ -25,4 +25,4 @@ function CantidadDeProductos() {
 }
 
 
-export default CantidadDeProductos;
+export default TotalVentas;

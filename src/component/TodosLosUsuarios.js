@@ -10,7 +10,7 @@ function TodosLosUsuarios() {
                 setUsuarios(data)
             })
             .catch(error => console.log(error))
-    }, [usuarios])
+    }, [])
 
     return (
         <ul>

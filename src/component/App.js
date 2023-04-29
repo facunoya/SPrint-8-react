@@ -1,19 +1,25 @@
 import TodosLosProductos from "./TodosLosProductos";
 import TodosLosUsuarios from "./TodosLosUsuarios";
+import CantidadDeProductos from "./CantidadDeProductos";
+import CantidadVentas from "./TotalVentas";
 import "../css/style.css"
+import TotalVentas from "./TotalVentas";
+import MejoresTres from "./MejoresTres";
+import Header from "./Header";
+
 
 function App() {
   return (
     <>
-      {/* <div className="productos">
-      <TodosLosProductos />
-      
-    </div>
-    <div className ="usuarios">
-      <TodosLosUsuarios/>
-    </div> */}
+      <Header />
 
-      <p>hola</p>
+      <MejoresTres></MejoresTres>
+      <TodosLosProductos></TodosLosProductos>
+      <CantidadDeProductos></CantidadDeProductos>
+      <TodosLosUsuarios></TodosLosUsuarios>
+      <CantidadVentas></CantidadVentas>
+      <TotalVentas></TotalVentas>
+
     </>
   );
 }
