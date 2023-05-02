@@ -8,6 +8,7 @@ import TotalVentas from "./TotalVentas";
 import MejoresTres from "./MejoresTres";
 import Header from "./Header";
 import Usuarios from "./Usuarios";
+import Destinos from "./Destinos"
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
     <>
       <div>
         <Header />
+        <Destinos></Destinos>
         <TodosLosProductos></TodosLosProductos>
         <MejoresTres></MejoresTres>
         <Usuarios></Usuarios>

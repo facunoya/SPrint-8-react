@@ -21,7 +21,7 @@ function Usuarios() {
 
         <>
          
-           <div className="usuarios">
+           <div className="usuarios" id="tablaUsuarios">
            <h2 className="tituloUsuarios">Listado de Usuarios</h2>
            
                 <div className="col-md-6 m-auto">

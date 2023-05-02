@@ -44,9 +44,9 @@ function Header() {
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse>
                     <Nav>
-                        <a className="navButton" href="#">Ventas</a>
-                        <a className="navButton" href="#">Productos</a>
-                        <a className="navButton" href="#">Destacados</a>
+                        <a className="navButton" href="#tablaUsuarios">Usuarios</a>
+                        <a className="navButton" href="#todosLosProductos">Productos</a>
+                        <a className="navButton" href="#mejoresTres">Destacados</a>
                         <nav className="menu-navegacion">
                             {
                                 usuarios.map((usuario, i) => {
