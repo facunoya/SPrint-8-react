@@ -1,0 +1,17 @@
+.usuarios{
+    
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+   background-color: #fff;    
+}
+.tituloUsuarios{
+    
+    height: 50px;
+    color: black;
+    position: relative;
+    text-align: center;
+    
+}
+.tablaUsuarios{
+    width: 100%;
+}

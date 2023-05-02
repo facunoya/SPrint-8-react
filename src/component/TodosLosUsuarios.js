@@ -1,34 +1,18 @@
-import { useState, useEffect, useRef } from "react"
+import React from "react";
 
-function TodosLosUsuarios() {
-    const [usuarios, setUsuarios] = useState([])
-    useEffect(() => {
 
-        fetch('http://localhost:3007/allusers')
-            .then(response => response.json())
-            .then(data => {
-                setUsuarios(data)
-            })
-            .catch(error => console.log(error))
-    }, [])
-
+function TodosLosUsuarios(props) {
     return (
-        <ul>
-            <h2 className="text-center m-3">USUARIOS</h2>
-            {usuarios.length === 0 && <p>Cargando...</p>}
-            {
-                usuarios.map((usuario, i) => {
-                    return (
-                        <li key={i}>
-                            <h3>{usuario.name}</h3>
-                            <img src={`http://localhost:3007/img/${usuario.avatar}`} width="150px" />
-                        </li>
-                    )
-                })
-            }
-        </ul>
+        <>
+                <tr>
+                    <td>{props.user_id}</td>
+                    <td>{props.name}</td>
+                    <td>{props.email}</td>
+                    <td>{props.country}</td>
+                    
+                </tr>
+        </>
     )
 }
 
-
-export default TodosLosUsuarios
+export default TodosLosUsuarios;
