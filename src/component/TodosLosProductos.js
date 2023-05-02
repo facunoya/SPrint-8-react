@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "react"
-
+import "../css/todosLosProductos2.css"
 
 function TodosLosProductos() {
     const [productos, setProductos] = useState([])
@@ -16,26 +16,26 @@ function TodosLosProductos() {
 
 
     return (
-        <div>
-            <h2 className="text-center m-3">Listado de destinos</h2>
-            <ul className="tarjeta">
+        <div id="todosLosProductos">
+            <h2 className="text-center segundo">Nuestros destinos</h2>
+            <div className="tarjeta">
                 {productos.length === 0 && <p>Cargando...</p>}
                 {console.log(productos)}
                 {productos.map((producto, i) => {
 
                     return (
 
-                        <li className="cartProduct" key={i}>
+                        <div className="cartProduct" key={i}>
 
-                            <h3>{producto.Destinations.name}</h3>
-                            <p>{producto.descripcionImagen}</p>
-                            <img src={`http://localhost:3007/img/${producto.imgURL}`} width="150px" />
+                            <h5>{producto.Destinations.name}</h5>
+                            {/* <p>{producto.descripcionImagen}</p> */}
+                            <img src={`http://localhost:3007/img/${producto.imgURL}`} width="200px" height="200px" />
 
-                        </li>
+                        </div>
                     )
                 })
                 }
-            </ul>
+            </div>
         </div>
     )
 }

@@ -14,7 +14,7 @@ function TodosLosUsuarios() {
 
     return (
         <ul>
-            <h2 className="text-center m-3">Listado de destinos</h2>
+            <h2 className="text-center m-3">USUARIOS</h2>
             {usuarios.length === 0 && <p>Cargando...</p>}
             {
                 usuarios.map((usuario, i) => {

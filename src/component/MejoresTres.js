@@ -1,5 +1,7 @@
 import { useState, useEffect, useRef } from "react" /*NO FUNCIONA */
 import "../css/mejoresTres.css"
+import { Table } from "react-bootstrap"
+
 
 function MejoresTres() {
     const [productos, setProductos] = useState([])
@@ -17,13 +19,23 @@ function MejoresTres() {
 
     return (
         <div id="mejoresTres">
-            <h1>3 mas vendidos</h1>
+            <h2 className="subtitulo">Màs vendidos</h2>
 
             {productos.map((producto, i) => {
                 return (
-                    <div>
-                        <p key={i}>nombre del producto :{producto.id}</p>
-                        <p key={"7" + i}>cantidad de ventas:{producto.cuantity}</p>
+                    <div className="tableContainer">
+                        <Table>
+                            <tbody>
+                                <tr key={producto + i}>
+                                    <td>
+                                        <p key={i}>Producto :{producto.id}</p>
+                                    </td>
+                                    <td>
+                                        <p key={"7" + i}>Ventas:{producto.cuantity}</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </Table>
                     </div>
                 )
             })}

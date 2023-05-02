@@ -1,4 +1,20 @@
 #mejoresTres {
-    height: 400px;
-    background-color: rgb(112, 181, 202);
+    height: auto;
+    /* background-color: rgb(112, 181, 202); */
+}
+
+.subtitulo {
+    /* color: #fff; */
+    padding: 1rem;
+    text-align: center;
+    margin: 3rem;
+}
+
+tbody {
+    padding: 1rem;
+}
+
+.tableContainer {
+    margin: auto;
+    width: 80%;
 }
