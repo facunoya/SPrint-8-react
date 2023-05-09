@@ -1,28 +1,19 @@
-import { useState, useEffect, useRef } from "react"
+import React from "react";
 
 
-function CantidadDeProductos() {
-    const [productos, setProductos] = useState([])
-    useEffect(() => {
-
-        fetch('http://localhost:3007/mostrarproductos')
-            .then(response => response.json())
-            .then(data => {
-
-                setProductos(data)
-            })
-            .catch(error => console.log(error))
-    }, [])
-
-
+function CantidadDeProductos(props) {
     return (
-        <div>
-            <h1>Cantidad de productos</h1>
-            {productos.length}
-        </div>
-
+        <>
+                <tr>
+                    <td>{props.destination_id}</td>
+                    <td>{props.name}</td>
+                    <td>{props.ranking}</td>
+                    <td>{props.season}</td>
+                    
+                    
+                </tr>
+        </>
     )
 }
-
 
 export default CantidadDeProductos;

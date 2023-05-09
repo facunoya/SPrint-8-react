@@ -1,28 +1,19 @@
-import { useState, useEffect, useRef } from "react"
+import React from "react";
 
 
-function TotalVentas() {
-    const [productos, setProductos] = useState([])
-    useEffect(() => {
-
-        fetch('http://localhost:3007/soldproducts')
-            .then(response => response.json())
-            .then(data => {
-
-                setProductos(data)
-            })
-            .catch(error => console.log(error))
-    }, [])
-
-
+function TotalVentas(props) {
     return (
-        <div>
-            <h1>Cantidad de ventas</h1>
-            {productos.length}
-        </div>
-
+        <>
+                <tr>
+                    <td>{props.user_products_id}</td>
+                    <td>{props.product_id}</td>
+                    <td>{props.user_id}</td>
+                   
+                    
+                    
+                </tr>
+        </>
     )
 }
-
 
 export default TotalVentas;
